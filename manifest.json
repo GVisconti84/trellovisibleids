@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trello Visible IDs",
+  "description": "This extension makes Trello IDs always visible in Trello Boards",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "css": ["css/style.css"],
+      "js": ["lib/jquery.min.js","js/script.js"]
+    }
+  ]
+}
